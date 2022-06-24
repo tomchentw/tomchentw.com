@@ -23,6 +23,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@svgr/webpack": "^6.2.1",
     "eslint": "8.18.0",
     "eslint-config-next": "12.1.6",
     "husky": "^8.0.1",
