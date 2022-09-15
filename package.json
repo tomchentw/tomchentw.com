@@ -17,15 +17,15 @@
     "@chakra-ui/react": "^2.2.1",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
-    "framer-motion": "^6.3.13",
-    "next": "12.1.6",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "framer-motion": "^7.3.5",
+    "next": "^12.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@svgr/webpack": "^6.2.1",
-    "eslint": "8.18.0",
-    "eslint-config-next": "12.1.6",
+    "eslint": "^8.23.1",
+    "eslint-config-next": "^12.3.0",
     "husky": "^8.0.1",
     "imagemin-lint-staged": "^0.5.1",
     "lint-staged": "^13.0.2",
