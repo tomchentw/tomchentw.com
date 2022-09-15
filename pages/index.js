@@ -1,24 +1,55 @@
 import Head from "next/head";
+import NFImage from "next/future/image";
 import * as React from "react";
 import * as Chakra from "@chakra-ui/react";
 
 import GITHUB_ICON from "../src/images/GitHub-Mark-120px-plus.png";
+import GDRIVE_ICON from "../src/images/drive_2020q4_48dp.png";
 import ToptalIcon from "../src/images/toptal.svg";
 import CodementorIcon from "../src/images/codementor.svg";
 import ArcIcon from "../src/images/arc.svg";
+import LinkedInIcon from "../src/images/linkedin.svg";
 
 const CARD_LIST = [
   {
     layout: "horizontal",
-    iconEl: <Chakra.Image boxSize={20} src={GITHUB_ICON.src} />,
-    title: "Open Source contributor",
+    iconEl: (
+      <NFImage
+        src={GITHUB_ICON}
+        width="80"
+        height="80"
+        style={{ maxWidth: "initial", width: 80, height: 80 }}
+      />
+    ),
+    title: "Open Source Contributor",
     url: "https://github.com/tomchentw",
     descEl: <Chakra.Text color="gray.600"></Chakra.Text>,
   },
   {
     layout: "horizontal",
+    iconEl: <LinkedInIcon />,
+    title: "Profile",
+    url: "https://www.linkedin.com/in/tomchentw/",
+    descEl: "",
+  },
+  {
+    layout: "horizontal",
+    iconEl: (
+      <NFImage
+        src={GDRIVE_ICON}
+        width="80"
+        height="80"
+        style={{ maxWidth: "initial", width: 80, height: 80 }}
+      />
+    ),
+    title: "Resume",
+    url: "https://drive.google.com/file/d/16v9dlpbaR9J5016UPNKdYb7sWYCBReRY/view?usp=sharing",
+    descEl: "",
+  },
+  {
+    layout: "horizontal",
     iconEl: <ToptalIcon />,
-    title: "Toptaler",
+    title: "Verified",
     url: "https://www.toptal.com/resume/tom-chen",
     descEl: (
       <Chakra.Text color="gray.600">
@@ -40,7 +71,7 @@ const CARD_LIST = [
   {
     layout: "horizontal",
     iconEl: <ArcIcon />,
-    title: "member",
+    title: "Member",
     url: "https://arc.dev/tomchentw",
     descEl: "",
   },
