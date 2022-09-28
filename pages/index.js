@@ -97,7 +97,15 @@ function Card({
         {"vertical" === layout && iconEl}
         <Chakra.Heading size="md">{title}</Chakra.Heading>
         <Chakra.LinkOverlay href={url} isExternal>
-          <Chakra.Text fontSize="xs" color="blue.500">
+          <Chakra.Text
+            fontSize="xs"
+            color="blue.500"
+            sx={{
+              "&": {
+                wordWrap: "anywhere",
+              },
+            }}
+          >
             {url}
           </Chakra.Text>
         </Chakra.LinkOverlay>
